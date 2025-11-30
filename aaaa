@@ -2,7 +2,6 @@
 for i,v in next,workspace.Builds:GetChildren() do
     if v.Name ~= "Chest" then continue end
         v.Name = "Looped"
-        --[[
         for i,v in v:GetDescendants() do
             if v:IsA("Part") then
                 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.CFrame
@@ -10,7 +9,6 @@ for i,v in next,workspace.Builds:GetChildren() do
                 break
             end
         end
-        -]]
     break
 end
 
